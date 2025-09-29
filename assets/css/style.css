@@ -1,0 +1,98 @@
+/* 기본 레이아웃 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #5C4033; /* 갈색 배경 */
+  color: #FAFAFA; /* 기본 글씨 크림색 */
+}
+
+header {
+  background-color: #87ceeb; /* 하늘색 */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* 활성 메뉴 */
+nav a.active {
+  background-color: #5C4033; /* 갈색 박스 */
+  color: #FAFAFA; /* 크림색 글씨 */
+}
+
+/* 콘텐츠 박스 */
+.content-box {
+  background-color: #FAFAFA; /* 크림색 박스 */
+  color: #5C4033; /* 갈색 글씨 */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 드롭다운 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #87ceeb;
+  color: #FAFAFA;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #87ceeb;
+  min-width: 120px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #FAFAFA;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #5C4033; /* 갈색 */
+  color: #FAFAFA; /* 크림색 */
+}
+
+.show {
+  display: block;
+}
+
+.site-footer { text-align:center; padding:18px; 
+  color:#FAFAFA; border-top:1px solid rgba(0,0,0,0.04); margin-top:30px; }
