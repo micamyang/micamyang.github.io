@@ -26,15 +26,26 @@
     </nav>
   </header>
 
-  <main>
-    <div class="content-box">
-      <h1>연락처</h1>
-      <ul>
-        <li>Email: <a href="mailto:micaela.sinn@example.com">micaela.sinn@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></li>
-      </ul>
-    </div>
+  <main class="contact-container">
+    <section class="contact-inner">
+      <h1>Contact Me &#128140;</h1>
+      <form action="https://formspree.io/f/xkgqagog" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="성함" required>
+        <input type="email" name="email" placeholder="보내시는 분 이메일" required>
+        <input type="text" name="subject" placeholder="제목" required>
+        <textarea name="message" rows="6" placeholder="내용" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="https://github.com/micamyang" target="_blank" aria-label="GitHub">
+          <img src="../assets/images/GitHub.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/youngmin-sinn-b7bb93247/" target="_blank" aria-label="LinkedIn">
+          <img src="../assets/images/Linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">© 2025 Micaela Sinn</footer>
