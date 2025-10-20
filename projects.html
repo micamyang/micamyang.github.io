@@ -1,74 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <title>Projects - Micaela Sinn</title>
+  <link rel="icon" href="./assets/images/mica.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/script.js" defer></script>
-  <style>
-    /* 카드형 프로젝트 */
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin: 20px;
-    }
-    .project-card {
-      background-color: #FAFAFA; /* 크림색 */
-      color: #5C4033;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    }
-    .project-card h3 {
-      margin-top: 0;
-    }
-    .project-card a {
-      text-decoration: none;
-      color: #87ceeb;
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <a href="index.html" class="logo">Micaela Sinn</a>
+    <a href="./index.html" class="logo">Micaela Sinn</a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./projects.html" class="active">Projects</a>
+      <a href="./contact.html">Contact</a>
       <div class="dropdown">
         <button class="dropbtn">Language</button>
         <div class="dropdown-content">
-          <a href="projects.html">English</a>
-          <a href="kr/projects.html">한국어</a>
+          <a href="./projects.html">English</a>
+          <a href="./kr/projects.html">한국어</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
-    <div class="content-box">
+  <main class="project-container">
+    <section class="project-inner">
       <h1>Projects</h1>
       <div class="project-grid">
         <div class="project-card">
-          <h3>Security Monitoring System</h3>
-          <p>Developed a monitoring tool integrating Zabbix & CloudWatch for anomaly detection.</p>
-          <a href="projects/project1.html">View Details</a>
+          <h3>Pet Health Record App Development</h3>
+          <p>Mobile app development with UI/UX design and feature implementation</p>
+          <a href="./projects/project1.html">View Details</a>
         </div>
-        <div class="project-card">
-          <h3>ML-based Intrusion Detection</h3>
-          <p>Machine learning pipeline for predicting suspicious traffic patterns.</p>
-          <a href="projects/project2.html">View Details</a>
-        </div>
-        <!-- 새 프로젝트 추가 시 동일한 구조 복사 -->
-      </div>
-    </div>
-  </main>
 
+        <div class="project-card">
+          <h3>Machine Learning Prediction Project</h3>          
+          <p>Data collection, model training, and results visualisation</p>
+          <a href="./projects/project2.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>AWS-Based Secure Architecture Project</h3>          
+          <p>Network setup, XSS protection, WAF configuration, and IP blocking</p>
+          <a href="./projects/project3.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Network Configuration Project</h3>
+          <p>Designed network structure and IP settings using Cisco Packet Tracer</p>
+          <a href="./projects/project4.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>ESXi-Based Security Monitoring & Intrusion Detection</h3>
+          <p>ESXi virtualisation, firewall setup, and security testing with Kali Linux & Metasploitable</p>
+          <a href="./projects/project5.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Pygame Game Development</h3>
+          <p>Game planning and project management (PM)</p>
+          <a href="./projects/project6.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Hometown Introduction Website</h3>
+          <p>Static website built using HTML, CSS, JS, and PHP</p>
+          <a href="./projects/project7.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>K8S-Based MSA Infrastructure Project</h3>
+          <p>MSA infrastructure built with Flask, Docker, and Nexus</p>
+          <a href="./projects/project8.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>CI/CD High-Availability Architecture Project</h3>
+          <p>Automated deployment using Jenkins and Docker-Tomcat setup</p>
+          <a href="./projects/project9.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>MySQL Orchestrator-Based DB Cluster Management</h3>
+          <p>Database container management and master failure recovery</p>
+          <a href="./projects/project10.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>DCNN Plant Classification Project</h3>
+          <p>Data preprocessing, model training, and results visualisation</p>
+          <a href="./projects/project11.html">View Details</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Unity-Based Game Development</h3>
+          <p>Game design and project management using Unity Engine</p>
+          <a href="./projects/project12.html">View Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
   <footer class="site-footer">© 2025 Micaela Sinn</footer>
 </body>
 </html>
-

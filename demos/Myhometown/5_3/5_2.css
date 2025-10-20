@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'cherry';
+    src: url('./5_font/UDDigiKyokashoN-B.ttc');
+}
+@font-face {
+    font-family: 'diamond';
+    src: url('./5_font/ALGER.TTF');
+}
+@font-face {
+    font-family: 'broadway';
+    src: url('./5_font/BROADW.TTF');
+}
+
+body{
+    font-family: 'cherry';
+    background-color: black;
+    color: rgb(255, 236, 220);
+    text-align: left;
+}
+
+#audioplayer{
+    float: right;
+}
+
+header{
+    font-family: 'diamond';
+    background-image: url('./5_image/5_header.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 70px 70px;
+    text-align: center;
+    color: rgb(255, 192, 189);
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+section{
+    width: 50%;
+    position: relative;
+    left: 22%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: black;
+    text-align: left;
+}
+
+#title{
+    font-family: 'broadway';
+    background-color: darkred;
+    color: white;
+    padding: 15px 15px;
+    text-align: left;
+}
+
+.rightaside{
+    background-image: url('./5_image/5_rightaside.jpg');
+    background-size: 100% 100%;
+    width: 19%;
+    padding-left: 10px;
+    margin-right: 15px;
+    float: right;
+    font-style: italic;
+    color: rgb(255, 206, 214);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#sut{
+    font-style: italic;
+    text-align: center;
+    color: rgb(255, 206, 214);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
+}
+
+.leftaside {
+    background-image: url('./5_image/5_leftaside.jpg');
+    background-size: 100% 100%;
+    padding-left: 10px;
+    margin-right: 15px;
+    width: 19%;
+    float: left;
+    font-style: italic;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
+}
+
+.rightaside2 {
+    background-image: url('./5_image/5_leftaside.jpg');
+    background-size: 100% 100%;
+    width: 19%;
+    padding-left: 10px;
+    margin-right: 15px;
+    float: right;
+    font-style: italic;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
+}
+
+iframe{
+    width: 50%;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+footer{
+    font-family: 'broadway';
+    width: 50%;
+    position: relative;
+    left: 22%;
+    margin: 20px;
+    padding: 20px;
+    background-color: darkred;
+    color: black;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}

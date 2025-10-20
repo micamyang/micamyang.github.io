@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>머신러닝 예측 프로젝트</title>
+  <link rel="icon" href="../../assets/images/mica.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script src="../../assets/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Micaela Sinn</a>
+    <nav>
+      <a href="index.html">메인</a>
+      <a href="about.html">소개</a>
+      <a href="experience.html">경력</a>
+      <a href="projects.html" class="active">프로젝트</a>
+      <a href="contact.html">연락처</a>
+      <div class="dropdown">
+        <button class="dropbtn">언어</button>
+        <div class="dropdown-content">
+          <a href="../../projects/project2.html">English</a>
+          <a href="./project2.html">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="content-box">
+        <h1>머신러닝 예측 프로젝트</h1>
+        <p>2024.04.15 ~ 2024.06.12</p>
+
+        <section>
+            <h2>개요</h2>
+            <p>WHO에서 공식적으로 선언한 팬데믹 중 20세기 이후 선언된 H1N1과 COVID-19는 
+                1년 이상 지속되며 일상생활뿐만 아니라 사회, 정치, 경제적인 분야까지 많은 영향을 끼쳤다. 
+                특히 COVID-19 팬데믹은 현재까지 진행되고 있다. 본 연구에서는 H1N1과 COVID-19 팬데믹 기간 
+                동안 미국 3대 지수의 변화를 분석하고 향후 1년간의 주가 변동을 예측하여 팬데믹과 주가 사이의 
+                관계를 명확히 분석했다. Graph Attention Network (GAT)를 활용해 팬데믹과 주가 변동 간의 
+                관계를 분석했으며, Exponential Smoothing State Space Model (ETS) 예측모델을 활용해 향후 1년간의 
+                코로나 감염자 수를 예측하고, Prophet 예측 모델을 사용하여 ETS 모델로 예측된 코로나19 감염자 수와 
+                H1N1 팬데믹 기간 동안의 감염자 수를 포함한 변수들을 바탕으로, 향후 1년간 각 지수의 종가 (closing price)를 
+                예측하였다. 
+            </p>
+        </section>
+    
+        <section>
+            <h2>결과 및 지표</h2>
+            <ul>
+                <li>Metric A : 0.97 , 0.96, 0.96</li>
+                <li>RMSE : 890, 330, 140</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>기술</h2>
+            <p>Python, GAT, ETS, Prophet.</p>
+        </section>
+
+        <section>
+            <h2>코드</h2>
+            <p>코드는 아래 링크에서 확인할 수 있습니다.</p>
+            <p><a class="btn" href="https://github.com/micamyang/SNA.git" target="_blank">코드 보기</a></p>
+        </section>
+
+        <section>
+            <h2>논문</h2>
+            <p>논문 원본을 다운로드 할 수 있습니다.</p>
+            <a class="btn" href="../assets/docs/H1N1과 COVID-19 팬데믹이 미국 주식시장에 끼친 영향.pdf" target="_blank">다운로드</a>
+        </section>
+
+        <section>
+            <h2>PDF 자료</h2>
+            <p>PDF 자료는 아래에서 확인할 수 있습니다.</p>
+            <p><a class="btn" href="./SNA.pdf" target="_blank">다운로드</a></p>
+            <div style="margin-top:20px;">
+              <iframe src="./SNA.pdf" width="100%" height="600" title="Project PDF"></iframe>
+            </div>
+        </section>
+        
+        <p><a class="btn" href="../projects.html">Back to Projects</a></p>
+
+    </div>
+  </main>
+
+
+  
+  <footer class="site-footer">© 2025 Micaela Sinn</footer>
+</body>
+</html>

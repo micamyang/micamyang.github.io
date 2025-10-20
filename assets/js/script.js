@@ -14,3 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Small helper - highlight active nav link based on current path
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.nav a');
+  links.forEach(a => {
+    if (a.href === location.href) a.classList.add('active');
+  });
+});

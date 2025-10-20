@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>K8S 기반 MSA 인프라 구축 프로젝트</title>
+  <link rel="icon" href="../../assets/images/mica.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script src="../../assets/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Micaela Sinn</a>
+    <nav>
+      <a href="index.html">메인</a>
+      <a href="about.html">소개</a>
+      <a href="experience.html">경력</a>
+      <a href="projects.html" class="active">프로젝트</a>
+      <a href="contact.html">연락처</a>
+      <div class="dropdown">
+        <button class="dropbtn">언어</button>
+        <div class="dropdown-content">
+          <a href="../../projects/project8.html">English</a>
+          <a href="./project8.html">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="content-box">
+        <h1>K8S 기반 MSA 인프라 구축 프로젝트</h1>
+        <p>2025.05.12 ~ 2025.05.26</p>
+        <section>
+            <h2>요약</h2>
+            <p>
+              본 프로젝트는 MSA(Microservices Architecture) 환경에서 Flask 기반의 경량 웹 서비스를 구축하고 구성하는 데 중점을 두었습니다. 
+              Redis와 MySQL을 연동하여 로그인, 회원가입, 세션 관리 등 다양한 사용자 흐름을 지원했으며, 
+              기능 단위의 마이크로서비스 분리를 통해 유지보수 및 확장이 용이한 웹 서비스 아키텍처를 확립했습니다.
+            </p>
+        </section>
+
+        <section>
+            <h2>역할</h2>
+            <p>
+              본 프로젝트에서 Flask 웹 서버 담당으로서 핵심 웹 서비스의 설계, 구성 및 운영을 책임졌습니다.
+            </p>
+            <ul>
+              <li>Flask 웹 서비스 구현</li>
+              <p>
+                Flask 기반의 경량 웹 서비스를 개발하고 독립적인 컨테이너로 구성하여 
+                프론트 및 유저 서비스와 분리된 마이크로서비스 구조를 구현했습니다. 
+              </p>
+
+              <li>서비스 간 연동</li>
+              <p>
+                MSA 환경 내에서 Redis, MySQL 데이터베이스와 Flask 웹 서비스 간의 원활한 연결을 구성하여 
+                사용자 로그인, 회원가입 검증 및 서비스 간 세션 유지 기능을 성공적으로 구현했습니다. 
+              </p>
+            </ul>
+        </section>
+
+        <section>
+            <h2>결과</h2>
+            <p>
+              MSA 환경 내에서 Flask 기반의 웹 서비스가 Redis, MySQL과 안정적으로 연동되어 로그인, 회원가입, 세션 관리 등 
+              다양한 사용자 흐름(예: 공연 조회, 예매)을 성공적으로 지원하는 것을 확인했습니다. 
+              이를 통해 기능 단위로 분리된 마이크로서비스 구조의 장점(유지보수 및 확장성)을 실질적으로 입증할 수 있었습니다.
+            </p>
+        </section>
+
+        <section>
+            <h2>기술</h2>
+            <p>Python Flask, MySQL, Redis, Docker, MSA</p>
+            <p>웹 서비스 아키텍처 설계 및 구성, 서비스 연동 및 API 통신, 배포 및 확장성 고려</p>
+        </section>
+
+        <section>
+            <h2>PDF 자료</h2>
+            <p>PDF 자료는 아래에서 확인할 수 있습니다.</p>
+            <p><a class="btn" href="./k8s.pdf" target="_blank">다운로드</a></p>
+            <div style="margin-top:20px;">
+                <iframe src="./k8s.pdf" width="100%" height="600" title="Project PDF"></iframe>
+            </div>
+        </section>
+        
+        <p><a class="btn" href="../projects.html">Back to Projects</a></p>
+
+    </div>
+  </main>

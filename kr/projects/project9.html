@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CI/CD 기반 고가용성 아키텍처 구축 프로젝트</title>
+  <link rel="icon" href="../../assets/images/mica.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script src="../../assets/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Micaela Sinn</a>
+    <nav>
+      <a href="index.html">메인</a>
+      <a href="about.html">소개</a>
+      <a href="experience.html">경력</a>
+      <a href="projects.html" class="active">프로젝트</a>
+      <a href="contact.html">연락처</a>
+      <div class="dropdown">
+        <button class="dropbtn">언어</button>
+        <div class="dropdown-content">
+          <a href="../../projects/project9.html">English</a>
+          <a href="./project9.html">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="content-box">
+        <h1>CI/CD 기반 고가용성 아키텍처 구축 프로젝트</h1>
+        <p>2025.04.14 ~ 2025.04.22</p>
+        <section>
+            <h2>요약</h2>
+            <p>본 프로젝트는 AWS EC2 인프라 기반에서 Jenkins를 중심으로 CI/CD(지속적 통합/지속적 배포) 파이프라인을 구축하여, 
+              GitHub 코드 변경 감지부터 자동 빌드 및 이미지 생성, 다중 서버(본사 EC2 Tomcat, 독일/일본지사 Docker Tomcat) 
+              배포까지의 전 과정을 자동화 실습하는 프로젝트입니다. 
+              이를 통해 효율적인 개발 및 배포 프로세스를 확립하고 서비스 안정성을 높이는 데 기여할 것으로 기대됩니다. 
+            </p>
+        </section>
+
+        <section>
+            <h2>역할</h2>
+            <p>본 프로젝트에서 Jenkins 배포 담당 및 독일지사 Docker Tomcat 관리 역할을 수행하며 핵심적인 기여를 하였습니다.</p>
+            <ul>
+              <li>Jenkins 배포 및 CI/CD 파이프라인 구축</li>
+              <p>Jenkins 서버를 설정하고 GitHub Webhook 연동을 통해 코드 변경을 실시간으로 감지, 
+                자동 빌드 및 Docker 이미지 생성, 그리고 다중 서버로의 자동 배포 과정을 총괄했습니다.
+              </p>
+
+              <li>독일지사 서비스 배포 및 관리</li>
+              <p>
+                Dockerized Tomcat 환경에 독일지사 애플리케이션을 배포하고, 서비스가 안정적으로 운영되도록 관리했습니다. 
+                특히 AWS 보안 그룹 설정(포트 8083)을 통해 외부 접근을 가능하게 하는 등 독일지사 서비스의 배포 환경을 책임졌습니다
+              </p>
+            </ul>
+        </section>
+
+        <section>
+            <h2>결과</h2>
+            <p>본 프로젝트를 통해 Jenkins를 통한 자동화된 배포 이후, 본사, 독일지사, 일본지사의 Tomcat 웹 애플리케이션이 모두 정상적으로 기동됨을 Tomcat 웹 애플리케이션 매니저를 통해 시각적으로 확인했습니다.</p>
+        </section>
+
+        <section>
+            <h2>기술</h2>
+            <p>CI/CD 파이프라인 구축 및 운영, Docker 기반 배포, AWS 인프라 활용, 자동화 스크립트 및 구성 관리, Troubleshooting 및 모니터링</p>
+        </section>
+
+        <section>
+            <h2>PDF 자료</h2>
+            <p>PDF 자료는 아래에서 확인할 수 있습니다.</p>
+            <p><a class="btn" href="./CICD.pdf" target="_blank">다운로드</a></p>
+            <div style="margin-top:20px;">
+                <iframe src="./CICD.pdf" width="100%" height="600" title="Project PDF"></iframe>
+            </div>
+        </section>
+        
+        <p><a class="btn" href="../projects.html">Back to Projects</a></p>
+
+    </div>
+  </main>

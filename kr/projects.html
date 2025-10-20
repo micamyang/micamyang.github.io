@@ -2,36 +2,16 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>프로젝트 - 미카엘라 신</title>
+  <title>프로젝트</title>
+  <link rel="icon" href="../assets/images/mica.png" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="../assets/js/script.js" defer></script>
-  <style>
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin: 20px;
-    }
-    .project-card {
-      background-color: #FAFAFA;
-      color: #5C4033;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    }
-    .project-card h3 { margin-top: 0; }
-    .project-card a {
-      text-decoration: none;
-      color: #87ceeb;
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <a href="index.html" class="logo">미카엘라 신</a>
+    <a href="index.html" class="logo">Micaela Sinn</a>
     <nav>
-      <a href="index.html">홈</a>
+      <a href="index.html">메인</a>
       <a href="about.html">소개</a>
       <a href="experience.html">경력</a>
       <a href="projects.html" class="active">프로젝트</a>
@@ -46,25 +26,85 @@
     </nav>
   </header>
 
-  <main>
-    <div class="content-box">
+  <main class="project-container">
+    <section class="project-inner">
       <h1>프로젝트</h1>
       <div class="project-grid">
         <div class="project-card">
-          <h3>앱 개발 프로젝트</h3>
-          <p>모바일 앱 개발, UI/UX 및 기능 구현 담당</p>
-          <a href="project1.html">상세 보기</a>
+          <h3>반려동물 건강수첩 앱 개발 프로젝트</h3>
+          <p>모바일 앱 개발, UI/UX 및 기능 구현</p>
+          <a href="./projects/project1.html">상세 보기</a>
         </div>
+
         <div class="project-card">
-          <h3>머신러닝 예측 프로젝트</h3>
+          <h3>머신러닝 예측 프로젝트</h3>          
           <p>데이터 수집, 모델 학습, 결과 시각화</p>
-          <a href="project2.html">상세 보기</a>
+          <a href="./projects/project2.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>AWS 기반 보안형 아키텍처 구축 프로젝트</h3>          
+          <p>네트워크 구성, XSS 공격 방어, WAF, IP 차단</p>
+          <a href="./projects/project3.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>네트워크 망 구축 프로젝트</h3>
+          <p>Cisco Packet Tracer를 활용한 네트워크 구성 및 IP 설정</p>
+          <a href="./projects/project4.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>ESXi 기반 보안 관제 시스템 및 침입 탐지 프로젝트</h3>
+          <p>ESXi 가상화, 방화벽 구성, Kali Linux & Metasploitable 실습</p>
+          <a href="./projects/project5.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+         <h3>Pygame 기반 게임 개발 프로젝트</h3>
+         <p>게임 기획 및 프로젝트 매니징 (PM)</p>
+         <a href="./projects/project6.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>고향 소개 웹페이지 개발 프로젝트</h3>
+          <p>HTML, CSS, JS, PHP를 활용한 정적 웹사이트 개발</p>
+          <a href="./projects/project7.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>K8S 기반 MSA 인프라 구축 프로젝트</h3>
+          <p>Flask, Docker, Nexus 기반의 MSA 인프라 구성</p>
+          <a href="./projects/project8.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>CI/CD 기반 고가용성 아키텍처 구축 프로젝트</h3>
+          <p>Jenkins 자동 배포 및 Docker-Tomcat 환경 구성</p>
+          <a href="./projects/project9.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>MySQL Orchestrator 기반 DB 클러스터 관리 프로젝트</h3>
+          <p>DB 컨테이너 관리 및 Master 장애 복구</p>
+          <a href="./projects/project10.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>DCNN 식물 분류 프로젝트</h3>
+           <p>데이터 전처리, 모델 학습 및 결과 시각화</p>
+           <a href="./projects/project11.html">상세 보기</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Unity 기반 게임 개발 프로젝트</h3>
+          <p>Unity 엔진 기반 게임 기획 및 프로젝트 메니징 (PM)</p>
+          <a href="./projects/project12.html">상세 보기</a>
         </div>
       </div>
-    </div>
+    </section>
   </main>
-
+  
   <footer class="site-footer">© 2025 Micaela Sinn</footer>
 </body>
 </html>
-

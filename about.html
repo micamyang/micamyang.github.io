@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - Micaela Sinn</title>
+  <title>About Me - Micaela Sinn</title>
+    <link rel="icon" href="./assets/images/mica.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/script.js" defer></script>
 </head>
@@ -19,31 +20,78 @@
         <button class="dropbtn">Language</button>
         <div class="dropdown-content">
           <a href="about.html">English</a>
-          <a href="kr/about.html">한국어</a>
+          <a href="./kr/about.html">한국어</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="content-box">
+
+<main class="about-container">
+  <section class="about-inner">
     <h1>About Me</h1>
-    <p>Hello — I'm <strong>Micaela Sinn</strong>. I focus on network security, SOC tooling, and infrastructure hardening. I enjoy practical projects that produce measurable improvements.</p>
+    <div class="about-content">
+      <img src="./assets/images/MicaelaSinn.jpg" alt="Micaela Sinn" class="profile-img">
+      <div class="about-text">
+        <p>
+          I’m <strong>Micaela Sinn</strong>, an aspiring security engineer with a multidisciplinary background 
+          in computer engineering and translation studies from Hankuk University of Foreign Studies (HUFS). 
+          During my studies, I balanced technical coursework and team projects in app and web development 
+          and machine learning with five years of experience teaching English — an experience that honed 
+          my communication and collaboration skills across diverse teams. I also spent a semester as an exchange student at the University of Würzburg in Germany, 
+          and served as president of the German Language Society for two years, overseeing the production of the society's academic journal.
+        </p>
 
-    <section>
-      <h2>Background</h2>
-      <p>I graduated in [Your Major] from [University]. During my studies and internships I worked on network design, intrusion detection, and security automation.</p>
-    </section>
+        <p>
+          As part of my academic work, I applied a predictive machine learning model to perform experiments, 
+          which formed the basis of a research paper I co-authored. 
+          After graduation, I completed a six-month government-sponsored security engineering programme 
+          where I worked on hands-on, production-oriented projects. My practical experience includes 
+          containerised deployments using Docker, AWS security projects, and penetration-testing labs 
+          with Burp Suite, Kali Linux, Security Onion, and WebGoat. I am particularly drawn to offensive 
+          security (red teaming / ethical hacking) and have a growing interest in cryptography — 
+          including post-quantum cryptography (PQC).
+        </p>
 
-    <section>
-      <h2>Skills</h2>
+        <p>
+          I enjoy working at the intersection of infrastructure, cloud, and application security: 
+          automating secure deployments, detecting anomalies, and hardening systems against real-world threats. 
+          I am outgoing by nature, enjoy working in team environments, and bring curiosity and persistence to solving 
+          technical challenges. Outside of work, I practise kendo, take long walks, and study languages — I am fluent in English and Korean, 
+          have intermediate proficiency in Japanese and German, and have basic knowledge of Spanish, French, and Swedish.
+        </p>
+
+        <p>
+          I am actively seeking opportunities to contribute to security teams where I can apply my 
+          practical tooling experience, further develop my red-team skills, and explore cryptographic research 
+          in applied settings.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-extra">
+      <h2>Key Skills</h2>
       <ul>
-        <li>Network protocols & design (TCP/IP, BGP)</li>
-        <li>Security tooling (Snort, Suricata, ELK, Splunk)</li>
-        <li>Scripting & automation (Python, Bash, Ansible)</li>
+        <li>Docker / Containerisation</li>
+        <li>AWS (security-focused projects)</li>
+        <li>Penetration testing tools: Burp Suite, Kali Linux, WebGoat, Security Onion</li>
+        <li>Web & mobile development (team projects)</li>
+        <li>Machine learning: model experiments & visualisation (academic projects)</li>
+        <li>CI/CD basics, automation for secure deployments</li>
       </ul>
-    </section>
-  </main>
 
-  <footer class="site-footer">© 2025 Micaela Sinn</footer>
+      <h2>Languages</h2>
+      <ul>
+        <li>Korean — Native</li>
+        <li>English — Fluent</li>
+        <li>Japanese — Intermediate</li>
+        <li>German — Intermediate</li>
+        <li>Spanish / French / Swedish — Basic</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">© 2025 Micaela Sinn</footer>
 </body>
 </html>

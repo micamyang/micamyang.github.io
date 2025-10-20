@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Machine Learning Prediction Project</title>
+  <link rel="icon" href="../assets/images/mica.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="logo">Micaela Sinn</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+          <a href="project2.html">English</a>
+          <a href="../kr/projects/project2.html">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="content-box">
+        <h1>Machine Learning Prediction Project</h1>
+        <p>15.04.2024 ~ 12.06.2024</p>
+
+        <section>
+            <h2>English Abstract</h2>
+            <p>Among the pandemics officially declared by the WHO, H1N1 and COVID-19, 
+                declared after the 20th century, lasted more than a year and had a significant impact on daily life, 
+                as well as societal, political, and economic aspects. In particular, the COVID-19 pandemic is still 
+                ongoing. In this study, we analyze changes in the three major U.S. indices during the H1N1 and 
+                COVID-19 pandemics and predict stock price fluctuations for the upcoming year. We clearly 
+                established the relationship between pandemics and stock prices. The relationship was analyzed 
+                using Graph Attention Network (GAT), and we predicted the number of COVID-19 infections for a 
+                year using the Exponential Smoothing State Space Model (ETS). Additionally, we used the Prophet 
+                prediction model to forecast the closing prices of each index for the next year based on the 
+                variables including the number of COVID-19 infections predicted by the ETS model and the 
+                number of infections during the H1N1 pandemic.
+            </p>
+        </section>
+    
+        <section>
+            <h2>Result & Metrics</h2>
+            <ul>
+                <li>Metric A : 0.97 , 0.96, 0.96</li>
+                <li>RMSE : 890, 330, 140</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <p>Python, GAT, ETS, Prophet.</p>
+        </section>
+
+        <section>
+            <h2>Code</h2>
+            <p><a class="btn" href="https://github.com/micamyang/SNA.git" target="_blank">GitHub — source</a></p>
+        </section>
+
+        <section>
+            <h2>Paper (Korean)</h2>
+            <p>Original paper (Korean) is available for download</p>
+            <a class="btn" href="../kr/assets/docs/H1N1과 COVID-19 팬데믹이 미국 주식시장에 끼친 영향.pdf" target="_blank">Download Paper (KR)</a>
+        </section>
+
+        <section>
+            <h2>Presentation (PDF)</h2>
+            <p>You can check the project presentation here — Korean PDF available below.</p>
+            <p><a class="btn" href="../kr/projects/SNA.pdf" target="_blank">Download</a></p>
+            <div style="margin-top:20px;">
+              <iframe src="../kr/projects/SNA.pdf" width="100%" height="600" title="Project PDF"></iframe>
+            </div>
+        </section>
+
+        <p><a class="btn" href="projects.html">Back to Projects</a></p>        
+
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2025 Micaela Sinn</footer>
+</body>
+</html>
