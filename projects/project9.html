@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CI/CD High-Availability Architecture Project</title>
+  <link rel="icon" href="../assets/images/mica.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="logo">Micaela Sinn</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+          <a href="project9.html">English</a>
+          <a href="../kr/projects/project9.html">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="content-box">
+        <h1>CI/CD High-Availability Architecture Project</h1>
+        <p>14.04.2025 ~ 22.04.2025</p>
+        <section>
+            <h2>Overview</h2>
+            <p>
+              This project involved building a CI/CD (Continuous Integration/Continuous Deployment) pipeline using Jenkins on AWS EC2 infrastructure. 
+              The pipeline automated the entire process from detecting GitHub code changes, to automated builds, image creation, 
+              and deployment to multiple servers (headquarters EC2 Tomcat and Docker Tomcat servers in Germany and Japan). 
+              The project aimed to establish an efficient development and deployment process while enhancing overall service reliability.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Role</h2>
+            <p>
+              I was responsible for Jenkins deployment and managing the Docker Tomcat environment for the German branch, playing a key role in the automation process.
+            </p>
+            <ul>
+              <li><strong>Jenkins deployment and CI/CD pipeline configuration</strong></li>
+              <p>
+                Set up the Jenkins server and integrated it with GitHub Webhooks to detect code changes in real time. 
+                Oversaw the entire process of automated builds, Docker image creation, and deployment to multiple servers.
+              </p>
+
+              <li><strong>German branch service deployment and management</strong></li>
+              <p>
+                Deployed the application to the Dockerised Tomcat environment for the German branch and ensured stable service operation. 
+                Configured AWS security groups (port 8083) to allow external access, taking responsibility for the deployment environment of the German branch.
+              </p>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Result</h2>
+            <p>
+              Following the automated deployment through Jenkins, the Tomcat web applications at headquarters, the German branch, 
+              and the Japanese branch were successfully launched and visually confirmed using the Tomcat Web Application Manager.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <p>
+              CI/CD pipeline implementation and operation, Docker-based deployment, AWS infrastructure utilisation, 
+              automation scripting and configuration management, troubleshooting and monitoring
+            </p>
+        </section>
+
+        <section>
+            <h2>Presentation (PDF)</h2>
+            <p>You can check the project presentation here — Korean PDF available below.</p>
+            <p><a class="btn" href="../kr/projects/MicaelaSinn_Project_CICD.pdf" target="_blank">Download</a></p>
+            <div style="margin-top:20px;">
+              <iframe src="../kr/projects/MicaelaSinn_Project_CICD.pdf" width="100%" height="600" title="Project PDF"></iframe>
+            </div>
+        </section>
+        
+        <p><a class="btn" href="../projects.html">Back to Projects</a></p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2025 Micaela Sinn</footer>
+</body>
+</html>

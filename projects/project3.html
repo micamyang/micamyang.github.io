@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS-Based Secure Architecture Project</title>
+  <link rel="icon" href="../assets/images/mica.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="logo">Micaela Sinn</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+          <a href="project3.html">English</a>
+          <a href="../kr/projects/project3.html">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-container">
+    <div class="content-box">
+        <h1>AWS-Based Secure Architecture Project</h1>
+        <p>14.07.2025 ~ 21.07.2025</p>
+        <section>
+            <h2>Overview</h2>
+            <p>
+              I participated in building a secure hotel booking web service based on an AWS 2-Tier architecture. 
+              The project involved designing and implementing the entire infrastructure, enhancing security measures, 
+              and responding to simulated cyber-attacks. We validated the defence system through practical XSS and SQL injection attack testing.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Role</h2>
+            <p>
+              I was responsible for designing and configuring the AWS VPC and network architecture, 
+              verifying and implementing countermeasures for XSS and SQL injection attack scenarios, 
+              setting up AWS WAF with region-based IP blocking rules, strengthening perimeter security through firewall and ACL configurations, 
+              and integrating security logging with real-time monitoring to establish an effective threat detection and response environment.
+            </p>
+        </section>
+
+        <section>
+            <h2>Result</h2>
+            <ul>
+              <li>Successfully designed and deployed AWS infrastructure (7 EC2 instances, RDS, S3, Route 53, ElastiCache, and more)</li>
+              <li>Effectively blocked major web attacks such as XSS and SQL injection using IP-based defence rules</li>
+              <li>Established a real-time security monitoring environment using WAF and GuardDuty</li>
+              <li>Implemented an alert and monitoring system with Zabbix, Grafana and Prometheus</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <p>
+              AWS – EC2, RDS, S3, Route 53, CloudFront, ACM, ElastiCache<br>
+              WAF, Network ACL, IP Blocking, XSS & SQLi Attack Mitigation<br>
+              Zabbix, Prometheus, Grafana, AWS CLI, CloudWatch, Telegram Alert<br>
+              Docker, Auto Scaling, Load Balancer
+            </p>
+        </section>
+
+        <section>
+            <h2>Presentation (PDF)</h2>
+            <p>You can check the project presentation here — Korean PDF available below.</p>
+            <p><a class="btn" href="../kr/projects/MicaelaSinn_Project_AWS.pdf" target="_blank">Download</a></p>
+            <div style="margin-top:20px;">
+              <iframe src="../kr/projects/MicaelaSinn_Project_AWS.pdf" width="100%" height="600" title="Project PDF"></iframe>
+            </div>
+        </section>
+        
+        <p><a class="btn" href="../projects.html">Back to Projects</a></p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2025 Micaela Sinn</footer>
+</body>
+</html>

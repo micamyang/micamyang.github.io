@@ -435,3 +435,236 @@ width: 100%;
   transform: scale(1.1);
 }
 
+/* ==============================
+   EXPERIENCE PAGE
+============================== */
+.experience-container {
+  background-color: #f5f0e8; /* 바깥 container */
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.experience-inner {
+  background-color: #FAFAFA; /* 안쪽 container */
+  border-radius: 20px;
+  padding: 50px 70px;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.experience-header h1 {
+  font-size: 2.3rem;
+  color: #5C4033;
+}
+
+.cv-btn {
+  background-color: #87ceeb;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: #6cbbe0;
+}
+
+/* 타임라인 본체 */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 900px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background-color: #5C4033; /* 갈색 선 */
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  /*text-align: right;*/
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-content {
+  background-color: #fffefc;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-content h3 {
+  color: #5C4033;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.timeline-content .date {
+  color: #87ceeb;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #3b2f2f;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 하늘색 점 */
+.dot {
+  position: absolute;
+  top: 40px;
+  left: 100%;
+  transform: translate(-50%, 0);
+  width: 18px;
+  height: 18px;
+  background-color: #87ceeb;
+  border-radius: 50%;
+  border: 3px solid #FAFAFA;
+  z-index: 3;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.timeline-item.right .dot {
+  left: 0%;
+  transform: translate(-50%, 0);
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .timeline::before {
+    left: 8px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    text-align: left;
+  }
+  .timeline-item.right {
+    left: 0;
+  }
+  .dot {
+    left: 0;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* ==============================
+   SKILLS SECTION
+============================== */
+.skills-section {
+  margin-top: 80px;
+  background-color: #FAFAFA;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skills-section h2 {
+  font-size: 1.8rem;
+  color: #5C4033;
+  border-left: 5px solid #87ceeb;
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px 25px;
+}
+
+.skills-list li {
+  color: #5C4033;
+  font-size: 1rem;
+  background-color: #fffefc;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-4px);
+}
+
+/* Skill 전체 바깥 container */
+.skills-container {
+  background-color: #f5f0e8; /* Experience와 같은 바탕색 */
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+/* Skill 개별 설명 추가 스타일 */
+.skills-list li p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Experience & Skills container 너비 통일 */
+.experience-container,
+.skills-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f0e8;
+}
+
+.experience-inner,
+.skills-section {
+  background-color: #FAFAFA;
+  max-width: 1200px;       /* ✅ 둘 다 동일한 너비 */
+  width: 100%;
+  padding: 60px 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 40px auto;
+}
+
+/* Skills 섹션 제목 스타일 (li 안의 h3) */
+.skills-list h3 {
+  font-size: 1.2rem;        /* 글자 크기 */
+  font-weight: 700;         /* 굵게 */
+  color: #5C4033;           /* 타임라인 제목 색상과 통일 */
+  margin-bottom: 6px;       /* 설명(p)과 간격 */
+}
+
